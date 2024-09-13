@@ -1,3 +1,5 @@
+/* Mesmos estilos gerais */
+
 @font-face {
   font-family: Lato;
   src: url('./Lato.ttf');
@@ -27,35 +29,41 @@ body {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  background: rgb(101, 160, 101);
+  padding: 20px;
+  background: linear-gradient(to right, rgb(101, 160, 101), rgb(140, 190, 140));
 }
 
 h1 {
   text-align: center;
   color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-#box {
+#box, #results {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   background: #eee;
   border-radius: 15px;
   overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }
 
 header, footer {
   background: #d4d4d4;
   text-align: center;
   padding: 10px;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 section {
-  padding: 30px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  text-align: center;
 }
 
 ul {
@@ -68,9 +76,10 @@ ul {
 li {
   padding: 15px;
   cursor: pointer;
-  transition: .1s;
+  transition: 0.3s;
   border-radius: 30px;
   border: 1px dashed #a7a7a7;
+  background-color: white;
 }
 
 li:hover {
@@ -82,22 +91,17 @@ li:active {
   transform: scale(0.95);
 }
 
-section > p {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 #initButton {
-  padding: 30px 60px;
-  font-size: 2em;
-  border-radius: 30px;
+  padding: 20px 40px;
+  font-size: 1.8em;
+  border-radius: 50px;
   border: none;
-  background: #ec3c51;
+  background: linear-gradient(135deg, #ec3c51, #ff6666);
   color: white;
-  box-shadow: 0 20px 0 #c94151;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   font-weight: bold;
-  transition: .1s;
+  transition: 0.3s;
 }
 
 #initButton:hover {
@@ -105,12 +109,62 @@ section > p {
 }
 
 #initButton:active {
-  box-shadow: 0 10px 0 #c94151;
-  translate: 0 10px;
+  box-shadow: 0 5px 0 #c94151;
+  transform: translateY(5px);
 }
 
-#results {
-  background: #eee;
-  width: 500px;
-  border-radius: 15px;
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  body {
+    gap: 30px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  #box, #results {
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header, footer {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  #initButton {
+    font-size: 1.5em;
+    padding: 15px 30px;
+  }
+
+  li {
+    padding: 12px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  #initButton {
+    font-size: 1.3em;
+    padding: 10px 20px;
+  }
+
+  li {
+    padding: 10px;
+    font-size: 1em;
+  }
+
+  header, footer {
+    padding: 5px;
+  }
 }
