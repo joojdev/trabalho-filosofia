@@ -1,0 +1,44 @@
+[
+  {
+    "text": "Você acabou de ser promovido no trabalho, mas descobre que um colega de equipe foi injustamente prejudicado para que você recebesse a promoção. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Aceito a promoção e sigo em frente, afinal, eu mereci."
+      },
+      {
+        "text": "Confronto a injustiça, ainda que isso possa custar minha promoção."
+      },
+      {
+        "text": "Ignoro a situação e aproveito meu novo status."
+      }
+    ]
+  },
+  {
+    "text": "Você tem a chance de investir em um negócio lucrativo, mas que explora mão de obra de maneira antiética. Se você não investir, perderá uma oportunidade financeira importante. Qual será sua escolha?",
+    "alternatives": [
+      {
+        "text": "Invisto, pois preciso garantir meu futuro financeiro."
+      },
+      {
+        "text": "Rejeito o investimento, pois não concordo com a exploração de trabalhadores."
+      },
+      {
+        "text": "Invisto, mas tentarei fazer mudanças no futuro."
+      }
+    ]
+  },
+  {
+    "text": "Você é responsável por decidir o futuro de um projeto comunitário. Sua decisão pode beneficiar uma grande parte da população, mas trará consequências negativas para uma minoria vulnerável. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Priorizo o benefício da maioria, mesmo com as consequências negativas."
+      },
+      {
+        "text": "Busco uma solução que minimize os danos para todos, mesmo que seja mais difícil."
+      },
+      {
+        "text": "Deixo a decisão para os outros, pois não quero assumir responsabilidade."
+      }
+    ]
+  }
+]

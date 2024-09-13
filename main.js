@@ -1,48 +1,75 @@
 const titleElement = document.querySelector('#title')
 const questionElement = document.querySelector('#question')
 const alternativesElement = document.querySelector('#alternatives')
+const initButton = document.querySelector('#initButton')
+const box = document.querySelector('#box')
+const resultsBox = document.querySelector('#results')
+const content = document.querySelector('#content')
 
-const questions = [
-  {
-    question: 'Você acabou de ser promovido no trabalho, mas descobre que um colega de equipe foi injustamente prejudicado para que você recebesse a promoção. O que você faz?',
-    alternatives: [
-      'Aceito a promoção e sigo em frente, afinal, eu mereci.',
-      'Confronto a injustiça, ainda que isso possa custar minha promoção.',
-      'Ignoro a situação e aproveito meu novo status.'
-    ]
-  },
-  {
-    question: 'Você tem a chance de investir em um negócio lucrativo, mas que explora mão de obra de maneira antiética. Se você não investir, perderá uma oportunidade financeira importante. Qual será sua escolha?',
-    alternatives: [
-      'Invisto, pois preciso garantir meu futuro financeiro.',
-      'Rejeito o investimento, pois não concordo com a exploração de trabalhadores.',
-      'Invisto, mas tentarei fazer mudanças no futuro.'
-    ]
-  },
-  {
-    question: 'Você é responsável por decidir o futuro de um projeto comunitário. Sua decisão pode beneficiar uma grande parte da população, mas trará consequências negativas para uma minoria vulnerável. O que você faz?',
-    alternatives: [
-      'Priorizo o benefício da maioria, mesmo com as consequências negativas.',
-      'Busco uma solução que minimize os danos para todos, mesmo que seja mais difícil.',
-      'Deixo a decisão para os outros, pois não quero assumir responsabilidade.'
-    ]
-  }
-]
+initButton.addEventListener('click', () => {
+  initButton.classList.add('hidden')
+  box.classList.remove('hidden')
+})
 
-function loadQuestion(index) {
-  titleElement.textContent = `Pergunta Nº ${index + 1}`
+function loadQuestion(question, callback) {
 
-  questionElement.textContent = questions[index].question
-  questions[index].alternatives.forEach((alternative) => {
+  questionElement.textContent = question.text
+  alternativesElement.innerHTML = ''
+  question.alternatives.forEach((alternative) => {
     const alternativeElement = document.createElement('li')
-    alternativeElement.textContent = alternative
+    alternativeElement.textContent = alternative.text
+    alternativeElement.addEventListener('click', () => callback(alternative))
+
     alternativesElement.appendChild(alternativeElement)
   })
 }
 
-function main() {
-  let currentQuestionIndex = 0
-  loadQuestion(currentQuestionIndex)
+function fetchQuestions() {
+  return new Promise((resolve, reject) => {
+    fetch('./questions.json')
+      .then((response) => {
+        if (!response.ok) throw new Error('Houve um problema ao buscar as questões no banco de dados.')
+        return response.json()
+      })
+      .then((questions) => resolve(questions))
+      .catch((error) => reject(error))
+  })
+}
+
+function showResults(answers) {
+  // É aqui onde você para quando termina o Quiz.
+  box.classList.add('hidden')
+  resultsBox.classList.remove('hidden')
+  content.textContent = JSON.stringify(answers, null, 2)
+}
+
+async function main() {
+  let questions = []
+
+  await fetchQuestions()
+    .then((fetchedQuestions) => {
+      questions = fetchedQuestions
+    })
+    .catch((error) => {
+      console.log(error)
+    })
+
+  if (!questions) return
+
+  let index = 0
+  let answers = []
+
+  function nextQuestion(alternative = undefined) {
+    if (alternative) answers.push(alternative)
+    if (index == questions.length) return showResults(answers)
+
+    titleElement.textContent = `Pergunta Nº ${index + 1}`
+    loadQuestion(questions[index], nextQuestion)
+
+    index += 1
+  }
+
+  nextQuestion()
 }
 
 main()
