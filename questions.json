@@ -1,43 +1,256 @@
 [
   {
-    "text": "Você acabou de ser promovido no trabalho, mas descobre que um colega de equipe foi injustamente prejudicado para que você recebesse a promoção. O que você faz?",
+    "text": "Você vê uma pessoa em necessidade e tem a opção de ajudá-la, mas isso exige que você sacrifique algo valioso. O que você faz?",
     "alternatives": [
       {
-        "text": "Aceito a promoção e sigo em frente, afinal, eu mereci."
+        "text": "Ajudo a pessoa, pois isso reflete o tipo de pessoa que desejo ser.",
+        "type": 0
       },
       {
-        "text": "Confronto a injustiça, ainda que isso possa custar minha promoção."
+        "text": "Ajudo, pois isso provavelmente resultará em uma situação melhor para todos os envolvidos.",
+        "type": 1
       },
       {
-        "text": "Ignoro a situação e aproveito meu novo status."
+        "text": "Ajudo, porque não seria justo deixar de agir em uma situação como essa.",
+        "type": 2
       }
     ]
   },
   {
-    "text": "Você tem a chance de investir em um negócio lucrativo, mas que explora mão de obra de maneira antiética. Se você não investir, perderá uma oportunidade financeira importante. Qual será sua escolha?",
+    "text": "Um amigo seu pediu para você mentir por ele para evitar um problema, mas isso pode prejudicar outra pessoa. O que você faz?",
     "alternatives": [
       {
-        "text": "Invisto, pois preciso garantir meu futuro financeiro."
+        "text": "Digo a verdade, pois agir de forma transparente é o certo a fazer.",
+        "type": 0
       },
       {
-        "text": "Rejeito o investimento, pois não concordo com a exploração de trabalhadores."
+        "text": "Decido mentir, avaliando se as consequências da verdade seriam piores para ele e outras pessoas.",
+        "type": 1
       },
       {
-        "text": "Invisto, mas tentarei fazer mudanças no futuro."
+        "text": "Não minto, já que ser honesto é algo que acredito ser fundamental, independentemente das circunstâncias.",
+        "type": 2
       }
     ]
   },
   {
-    "text": "Você é responsável por decidir o futuro de um projeto comunitário. Sua decisão pode beneficiar uma grande parte da população, mas trará consequências negativas para uma minoria vulnerável. O que você faz?",
+    "text": "Você está em uma situação em que poderia roubar algo sem que ninguém soubesse. O que você faz?",
     "alternatives": [
       {
-        "text": "Priorizo o benefício da maioria, mesmo com as consequências negativas."
+        "text": "Não roubo, pois isso corromperia o tipo de pessoa que me esforço para ser.",
+        "type": 0
       },
       {
-        "text": "Busco uma solução que minimize os danos para todos, mesmo que seja mais difícil."
+        "text": "Decido com base no impacto que o roubo causaria em todas as partes envolvidas.",
+        "type": 1
       },
       {
-        "text": "Deixo a decisão para os outros, pois não quero assumir responsabilidade."
+        "text": "Não roubo, porque essa atitude seria errada em qualquer situação.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você está dirigindo um carro autônomo e ele precisa escolher entre salvar um grupo de cinco pedestres ou salvar um indivíduo na calçada. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Penso no que seria a decisão mais justa para todos os envolvidos e ajo de acordo.",
+        "type": 0
+      },
+      {
+        "text": "Salvo o grupo maior, considerando o número de vidas que serão preservadas.",
+        "type": 1
+      },
+      {
+        "text": "Não escolho, pois sacrificar uma vida para salvar outras é usar uma pessoa como meio para um fim, o que é moralmente errado.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você encontra uma carteira cheia de dinheiro na rua. Não há identificação, mas você poderia doar o dinheiro para uma instituição de caridade. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Devolvo a carteira, pois é importante manter minha integridade pessoal.",
+        "type": 0
+      },
+      {
+        "text": "Doa para a caridade, pensando no impacto positivo que isso terá em mais pessoas.",
+        "type": 1
+      },
+      {
+        "text": "Devolvo a carteira, porque é o correto, independentemente de quem poderia ser beneficiado.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Um amigo cometeu um crime menor e você sabe que se contar a verdade, ele será punido severamente. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Pondero o que seria uma atitude justa, mas também considero a lealdade.",
+        "type": 0
+      },
+      {
+        "text": "Avalio o que causará menos danos e tomo minha decisão com base nisso.",
+        "type": 1
+      },
+      {
+        "text": "Conto a verdade, já que a honestidade é um princípio que não devo violar.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você tem a chance de trapacear em um teste e melhorar sua nota sem ser descoberto. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Não trapaceio, pois minha integridade pessoal é mais importante que a nota.",
+        "type": 0
+      },
+      {
+        "text": "Penso se o benefício de uma nota maior vale os possíveis efeitos futuros dessa ação.",
+        "type": 1
+      },
+      {
+        "text": "Não trapaceio, porque fazer isso prejudicaria a confiança no sistema.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Uma grande empresa oferece-lhe um emprego lucrativo, mas você sabe que essa empresa prejudica o meio ambiente. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Recuso a oferta, pois não quero estar associado a práticas que ferem os valores que tento seguir.",
+        "type": 0
+      },
+      {
+        "text": "Aceito o emprego, mas penso em como posso usar essa posição para gerar impacto positivo no longo prazo.",
+        "type": 1
+      },
+      {
+        "text": "Recuso, pois apoiar algo que prejudica os outros seria inaceitável para mim.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Um paciente terminal lhe pede para ajudá-lo a acabar com sua vida, pois está sofrendo muito. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Reflete sobre o sofrimento envolvido e decide com base no que considera ser a escolha mais humana.",
+        "type": 0
+      },
+      {
+        "text": "Penso no quanto essa decisão impactará o paciente e aqueles ao redor dele e ajo com base nisso.",
+        "type": 1
+      },
+      {
+        "text": "Não ajudo, pois acredito que, em qualquer situação, a vida deve ser preservada.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você tem recursos limitados e deve decidir se ajuda financeiramente um parente ou doa a uma organização que beneficia muitas pessoas. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Ajudo o parente, pois sinto que essa é a escolha mais justa e que reflete meus valores pessoais.",
+        "type": 0
+      },
+      {
+        "text": "Doa para a organização, já que isso beneficiará um maior número de pessoas.",
+        "type": 1
+      },
+      {
+        "text": "Ajudo o parente, porque acredito que é meu dever cuidar das pessoas mais próximas.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você descobre que um grande segredo que poderia arruinar a reputação de alguém foi confiado a você. Compartilhar esse segredo traria benefícios para você. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Mantenho o segredo, porque valorizo a lealdade e a confiança depositada em mim.",
+        "type": 0
+      },
+      {
+        "text": "Pondero se o benefício pessoal justifica o prejuízo que isso causaria a essa pessoa.",
+        "type": 1
+      },
+      {
+        "text": "Mantenho o segredo, pois acredito que trair a confiança de alguém seria errado, independentemente do que eu poderia ganhar.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você trabalha em uma empresa que está oferecendo um serviço que pode não ser adequado para um cliente, mas isso traria lucro. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Ajo com honestidade e ofereço apenas o que realmente será útil ao cliente, porque isso reflete meus valores.",
+        "type": 0
+      },
+      {
+        "text": "Considero se o benefício para a empresa e o cliente é maior do que o prejuízo de oferecer algo inadequado.",
+        "type": 1
+      },
+      {
+        "text": "Recuso-me a vender o serviço, porque enganar o cliente seria errado.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Um amigo está sendo acusado injustamente de algo, e você pode intervir, mas isso pode prejudicar sua reputação. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Defendo o amigo, pois a lealdade e a justiça são importantes para mim.",
+        "type": 0
+      },
+      {
+        "text": "Penso nas consequências para mim e para meu amigo e decido com base no que trará melhores resultados.",
+        "type": 1
+      },
+      {
+        "text": "Defendo o amigo, pois acredito que é meu dever lutar contra a injustiça, independentemente dele ser meu amigo ou não.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você pode falsificar informações em um currículo para conseguir um emprego melhor. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Não falsifico, pois quero me manter fiel aos meus princípios e ser honesto sobre minhas capacidades.",
+        "type": 0
+      },
+      {
+        "text": "Avalio se o benefício de conseguir o emprego supera os possíveis riscos de ser descoberto.",
+        "type": 1
+      },
+      {
+        "text": "Não falsifico, porque mentir dessa forma seria moralmente errado.",
+        "type": 2
+      }
+    ]
+  },
+  {
+    "text": "Você pode promover uma campanha publicitária que sabe ser enganosa, mas que aumentará as vendas de um produto. O que você faz?",
+    "alternatives": [
+      {
+        "text": "Não promovo, porque prefiro ser transparente com o público e agir de acordo com meus valores.",
+        "type": 0
+      },
+      {
+        "text": "Pondero se os benefícios de aumentar as vendas superam o mal causado pela propaganda enganosa.",
+        "type": 1
+      },
+      {
+        "text": "Recuso, porque enganar o público seria moralmente inaceitável.",
+        "type": 2
       }
     ]
   }

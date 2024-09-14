@@ -129,6 +129,10 @@ li:active {
     max-width: 100%;
   }
 
+  #results{
+    overflow: auto;
+  }
+
   header, footer {
     font-size: 1em;
     padding: 8px;
@@ -143,6 +147,16 @@ li:active {
     padding: 12px;
     font-size: 1.1em;
   }
+}
+
+#parasepensar{
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.paragrafo{
+  text-align: justify;
+  text-indent: 20px;
 }
 
 @media (max-width: 480px) {
