@@ -152,11 +152,13 @@ li:active {
 #parasepensar{
   text-align: justify;
   text-indent: 20px;
+  padding: 10px;
 }
 
 .paragrafo{
   text-align: justify;
   text-indent: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 480px) {

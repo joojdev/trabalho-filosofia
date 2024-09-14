@@ -116,7 +116,8 @@ function showResults(pontuation) {
             'rgba(109, 56, 79, 1)',
             'rgba(194, 107, 35, 1)'
             ],
-          hoverOffset: 4
+          hoverOffset: 4,
+          borderWidth: 0
         }]
     }
   }
